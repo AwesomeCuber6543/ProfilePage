@@ -1,0 +1,165 @@
+/* styles.css */
+
+/* Existing styles remain, with modifications to the .container class */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    display: flex;          /* Enables flexbox layout */
+    flex-direction: column; /* Stacks child elements vertically */
+    min-height: 100vh;      /* Ensures body takes at least the full viewport height */
+}
+
+
+header, nav {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+
+    flex: 1; /* Allows the container to grow and fill available space */
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+/* Styles for the profile section remain the same */
+
+.profile {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.profile img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.profile-content {
+    flex: 1;
+}
+
+.profile-content h2 {
+    margin-top: 0;
+}
+
+.profile-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-content ul li {
+    margin-bottom: 5px;
+}
+
+/* Responsive design for smaller screens remains the same */
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .profile-content {
+        text-align: center;
+    }
+}
+
+a {
+    color: #1949e6 !important;
+    text-decoration: none !important;
+}
+
+a:visited {
+    color: #1949e6 !important;
+    text-decoration: none !important;
+}
+
+
+/* Existing styles remain unchanged */
+
+/* Styles for the favorites page */
+.favorites-section {
+    margin-bottom: 40px;
+}
+
+.favorites-section h2 {
+    margin-bottom: 10px;
+}
+
+.favorites-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.favorites-item img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+}
+
+.favorites-item-content {
+    flex: 1;
+}
+
+.favorites-item-content h3 {
+    margin-top: 0;
+}
+
+.favorites-item-content p {
+    margin-bottom: 10px;
+}
+
+.favorites-item-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+    .favorites-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .favorites-item img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .favorites-item-content ul {
+        padding-left: 0;
+    }
+}
